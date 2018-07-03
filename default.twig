@@ -24,10 +24,7 @@
             <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
             
                 {% for section in menu.sections %}
-                     <p class="text-muted">
-                         {{ section.name }}
-                     </p>
-            
+                    <p class="text-muted">{{ section.name }}</p>
                     <ul>
                         {% for itemId, item in section.items %}
                             <li class="toctree-l1 {{ itemId == currentMenu ? 'current' }}">
